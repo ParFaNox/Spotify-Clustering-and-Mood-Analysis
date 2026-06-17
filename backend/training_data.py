@@ -1,0 +1,41 @@
+# training_data = [
+#     {'track_id': '1bDbXMyjaUIooNwFE9wn0N', 'emotion': 'Joy'},
+#     {'track_id': '3azJifCSqg9fRij2yKIbWz', 'emotion': 'Anticipation'},
+#     {'track_id': '3JsydWaf2Ev4ehaLUjj3SY', 'emotion': 'Joy'},
+#     {'track_id': '7z3PblAN3dH1JMewiRydkZ', 'emotion': 'Trust'},
+#     {'track_id': '3B4cjvGlPvyBLNG3AzEgkZ', 'emotion': 'Joy'},
+#     {'track_id':'514joG57v4yKTsfQmz7stz', 'emotion': 'Anger'},
+#     {'track_id': '7sVbKoBdhXtYCEOO6qC1SN', 'emotion': 'Anticipation'},
+#     {'track_id': '2xFg6AyHkXFruGxRjy7Uzn','emotion': 'Anticipation'},
+#     {'track_id': '3ExgWVPWOQts9RVBkqpdic', 'emotion': 'Joy'},
+#     {'track_id': '03auLpFLdCv4HozP4pQseu', 'emotion': 'Trust'},
+#     {'track_id': '2LgrNOU8GQYASgz7lIDVt3', 'emotion': 'Anger'},
+#     {'track_id': '4YmsnZcxHEGEqHB3K0vdt0', 'emotion': 'Anticipation'},
+#     {'track_id': '4Dvkj6JhhA12EX05fT7y2e', 'emotion': 'Joy'},
+#     {'track_id': '7npLlaPu9Mfno8hjk5OagD', 'emotion': 'Trust'},
+#     {'track_id': '7JJmb5XwzOO8jgpou264Ml', 'emotion': 'Joy'},
+#     {'track_id': '0tgVpDi06FyKpA1z0VMD4v', 'emotion': 'Joy'},
+#     {'track_id': '4nVBt6MZDDP6tRVdQTgxJg', 'emotion': 'Anticipation'},
+    
+
+# ]
+
+training_data = [
+    {'track_name': 'Rich Flex', 'emotion': 'Joy'},
+    {'track_name': 'The Color Violet', 'emotion': 'Anticipation'},
+    {'track_name': 'Confident', 'emotion': 'Joy'},
+    {'track_name': 'GIRLS', 'emotion': 'Trust'},
+    {'track_name': 'E85', 'emotion': 'Joy'},
+    {'track_name': 'Janice STFU', 'emotion': 'Anger'},
+    {'track_name': "We Still Don't Trust You", 'emotion': 'Anticipation'},
+    {'track_name': 'On Top', 'emotion': 'Anticipation'},
+    {'track_name': 'Boyfriend', 'emotion': 'Joy'},
+    {'track_name': 'ATM', 'emotion': 'Trust'},
+    {'track_name': 'KICK OUT', 'emotion': 'Anger'},
+    {'track_name': "DON'T KILL THE PARTY (feat. Quavo & Juicy J)", 'emotion': 'Anticipation'},
+    {'track_name': 'As It Was', 'emotion': 'Joy'},
+    {'track_name': 'Girls Like You', 'emotion': 'Trust'},
+    {'track_name': "There's Nothing Holdin' Me Back", 'emotion': 'Joy'},
+    {'track_name': 'Perfect', 'emotion': 'Joy'},
+    {'track_name': 'Story of My Life', 'emotion': 'Anticipation'},
+]
