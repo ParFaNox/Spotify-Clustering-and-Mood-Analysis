@@ -4,6 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from training_data import training_data
 import pandas as pd
 import main
+import joblib, os
 
 def find_feature_by_id(track_name, all_features):
     for feature in all_features:
@@ -11,7 +12,6 @@ def find_feature_by_id(track_name, all_features):
             return feature
     return None
 def extract_audio_features(feature):
-    print(f"Available fields: {feature.keys()}")
     return {
         'valence': feature.get('valence', 0),
         'energy': feature.get('energy', 0),
@@ -36,13 +36,19 @@ def train_mood_classifier(all_features):
     print(f"Matched {len(x)} training samples")
     print(f"X list length: {len(x)}, Y list length: {len(y)}")
     all_features = [f for f in all_features if f is not None]
-    print(f"Non-None features IDs: {[f['id'] for f in all_features]}")
+    #print(f"Non-None features IDs: {[f['id'] for f in all_features]}")
     X_dataframe = pd.DataFrame(x)
     model = RandomForestClassifier(n_estimators=10, random_state=42)
     model.fit(X_dataframe, y)
-    return
-    #model.predict(X_dataframe)
+    joblib.dump(model, 'mood_model.pkl')
     
+    return model
+    #model.predict(X_dataframe)
+def load_mood_classifier():
+    if os.path.exists('mood_model.pkl'):
+        return joblib.load('mood_model.pkl')
+    else:
+        return None
 def classify_moods(features, model):
     x=[extract_audio_features(f) for f in features]
     X_dataframe=pd.DataFrame(x)
