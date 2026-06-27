@@ -50,7 +50,8 @@ def load_mood_classifier():
     else:
         return None
 def classify_moods(features, model):
-    x=[extract_audio_features(f) for f in features]
-    X_dataframe=pd.DataFrame(x)
-    return model.predict(X_dataframe)
+    x = [extract_audio_features(f) for f in features]
+    X_dataframe = pd.DataFrame(x)
+    predictions = model.predict(X_dataframe)
+    return predictions.tolist()
         
